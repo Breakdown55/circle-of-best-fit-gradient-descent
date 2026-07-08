@@ -64,9 +64,8 @@ Taking the partial derivative of Loss with respect to $a$ via the Chain Rule:
 $$\frac{∂L}{∂a}=\sum_{i=1}^{n}2\left(\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}-r\right)\cdot\frac{1}{2}\left(\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}\right)^{-\frac{1}{2}}\cdot2\left(x_{i}+a\right)$$
 
 Simplifying,
-$$
-\frac{∂L}{∂a}=\sum_{i=1}^{n}\frac{2\left(x_{i}+a\right)\left(\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}-r\right)}{\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}}
-$$
+
+$$\frac{∂L}{∂a}=\sum_{i=1}^{n}\frac{2\left(x_{i}+a\right)\left(\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}-r\right)}{\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}}$$
 
 Similarly,
 
