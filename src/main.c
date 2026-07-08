@@ -33,7 +33,7 @@ int main() {
     // seed RNG with current time
     srand(time(NULL));
     
-    FILE* log_path = OpenLog("results.csv");
+    FILE* log_path = OpenLog("..//analysis//results.csv");
 
     if (!log_path) {
         printf("Failed to find log file path");
