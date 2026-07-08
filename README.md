@@ -1,1 +1,0 @@
-# circle-of-best-fit-gradient-descent
