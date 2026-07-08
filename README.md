@@ -7,12 +7,28 @@
 ## How to Build and Run
 
 1. Clone the repo
-2. From the `src/` folder, run:
+2. From the `src/` folder, build the program:
+   
+   **Option 1: (recommended)** 
+   
+   ```
+   make
+   ```
+
+   **Option 2: Use GCC directly**
+   
    ```
    gcc main.c gradient.c io.c -o circle_fit -lm
+   ```
+
+3. Run the program:
+
+   ```
    ./circle_fit
    ```
-3. To generate the convergence plot:
+
+4. To generate the convergence plot:
+
    ```
    python plot_convergence.py
    ```
