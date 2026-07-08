@@ -39,6 +39,7 @@ First, we need a way to calculate the distance of any point $\left(x_{i},y_{i}\r
 The distance between the center of our circle to any point can be written as their Pythagorean distance $\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}$, then we can subtract $r$ to get the distance between the edge of our circle and the point.
 
 This makes our expression for squared error:
+
 $$\left(\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}-r\right)^{2}$$
 
 Since our Loss function is the sum of our squared errors:
@@ -55,6 +56,7 @@ $$∇L=\left(\frac{∂L}{∂a},\frac{∂L}{∂b},\frac{∂L}{∂r}\right)$$
 Each component of the vector tells us how Loss would change if we changed each variable. For example, the partial derivative $\frac{∂L}{∂a}$ describes how Loss changes when $a$ changes. If $\frac{∂L}{∂a}$ > 0, that would mean increasing $a$ would lead to an increase in Loss, suggesting that we should decrease $a$ to minimize loss. 
 
 Recall our Loss function:
+
 $$L\left(a,b,r\right)=\sum_{i=1}^{n}\left(\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}-r\right)^{2}$$
 
 Taking the partial derivative of Loss with respect to $a$ via the Chain Rule:
@@ -69,6 +71,7 @@ $$
 Similarly,
 
 $$\frac{∂L}{∂b}=\ \sum_{i=1}^{n}\frac{2\left(y_{i}+b\right)\left(\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}-r\right)}{\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}}$$
+
 Lastly,
 
 $$\frac{∂L}{∂r}=-2\sum_{i=1}^{n}\left(\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}-r\right)$$
@@ -81,6 +84,7 @@ Now, we've assembled $∇L$. Note that we do not need the coefficient $-2$.
 Recall that each partial derivative tells us which direction to adjust a parameter in order to minimize Loss. 
 
 To update $a$:
+
 $$a \leftarrow a - \eta \frac{\partial L}{\partial a}$$
 
 Where $\eta$ is our Learning Rate, which tells our model how aggressively to update parameters according to our gradient. I've used $\eta = 0.01$ in the code.
