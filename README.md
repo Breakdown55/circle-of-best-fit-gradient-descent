@@ -26,7 +26,7 @@ As with any gradient descent, we need a "Loss" function which tells us, given ou
 
 We will measure Loss with the sum of the squared errors, where the error for any given point is the distance between that point and our current circle's edge. The total Loss is the sum of these squared errors.
 
-For a circle $\left(x-2\right)^{2}+\left(y-3\right)^{2}=1$, the error of the point $(5,5)$ is ~$2.60556$:
+For a circle $\left(x-2\right)^{2}+\left(y-3\right)^{2}=1$, the error of the point $(5,5)$ is around $2.60556$:
 
 ![Visual of squared error](images/squared_error_visual.png)
 
