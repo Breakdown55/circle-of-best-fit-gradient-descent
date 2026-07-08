@@ -98,7 +98,7 @@ $$r \leftarrow r - \eta \frac{\partial L}{\partial r}$$
 These three updates are applied until we've reached approximately the minimum loss, or until `MAX_ITERATIONS` times, set to `100 000` by default.
 We can approximate when we've reached the minimum loss by checking if the change in loss between the current and previous iteration is negligable. In other words, if:
 ```
-fabs(loss - previous_loss) < EPSILSON
+|loss - previous_loss| < EPSILSON
 ```
 Where `EPSILSON` is defined as 1e-9.
 
