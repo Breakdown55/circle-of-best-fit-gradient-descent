@@ -75,7 +75,7 @@ Lastly,
 
 $$\frac{∂L}{∂r}=-2\sum_{i=1}^{n}\left(\sqrt{\left(x_{i}+a\right)^{2}+\left(y_{i}+b\right)^{2}}-r\right)$$
 
-Now, we've assembled $∇L$. Note that we do not need the coefficient $-2$, as constants are irrelvant for the direction we must update A, B, and R.
+Now, we've assembled $∇L$. Note that we do not need the coefficients $2$ or $-2$, as constants are irrelvant for the direction we must update A, B, and R.
 
 
 ## Updating Parameters Using Our Gradient Vector
