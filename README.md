@@ -1,8 +1,8 @@
 # Circle of Best Fit - Gradient Descent
 
-![[result_visual.png]]
+![Circle fitted to points](images/result_visual.png)
 
-![[training_loss.png]]
+![Training loss graph](images/training_loss.png)
 
 ## How to Build and Run
 
@@ -28,7 +28,7 @@ We will measure Loss with the sum of the squared errors, where the error for any
 
 For a circle $\left(x-2\right)^{2}+\left(y-3\right)^{2}=1$, the error of the point $(5,5)$ is ~$2.60556$:
 
-![[squared_error_visual.png|279]]
+![Visual of squared error](images/squared_error_visual.png)
 
 ## Writing Our Loss Function
 
