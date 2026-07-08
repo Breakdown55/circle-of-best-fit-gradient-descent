@@ -8,7 +8,7 @@
 
 #define MAX_ITERATIONS  100000
 #define LEARNING_RATE   0.01
-#define EPSILSON        1e-9
+#define EPSILON        1e-9
 
 
 
@@ -67,7 +67,7 @@ int main() {
 
         LogLoss(log_path, i, loss, A, B, R);
 
-        if (fabs(loss - previous_loss) < EPSILSON) {
+        if (fabs(loss - previous_loss) < EPSILON) {
             printf("Broke out at i=%d\n", i);
             break;
         }
