@@ -1,6 +1,6 @@
 # Circle of Best Fit - Gradient Descent
 
-![Circle fitted to points][images/result_visual.png]
+![Circle fitted to points](images/result_visual.png)
 
 ![[training_loss.png]]
 
